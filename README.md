@@ -14,11 +14,9 @@ End-to-End QM Integration with MM & PP in SAP (Functional Project)
                 Usage Decision
                 Defect Recording & Quality Notifications
                 Stock Posting based on UD
-
-          This project simulates a real-time manufacturing scenario.
             
 
-How to Use This Repository
+ How to Use This Repository
 
           Read the Business Scenario  
           Review the Process Flow Diagram
@@ -28,18 +26,21 @@ How to Use This Repository
             
 2. Business Scenario
 
-          ABC Automotive Manufacturing Company:
-                Procures raw materials from vendors.
-                Produces finished goods using production orders.
-                Performs inspections at:
-                      Goods Receipt from Vendor
-                      During Production
-                      After Production
-                  
-          If defects are found:
-                Stock is blocked
-                Quality Notification is triggered
-                Corrective action is taken
+          The company:
+               Procures raw materials from vendors
+               Produces semi-finished and finished goods
+               Performs quality inspections at:
+                    Goods Receipt (Incoming)
+                    During Production (In-Process)
+                    After Production (Final Inspection)
+          Quality issues must:
+               Block stock automatically
+               Trigger Quality Notification
+               Allow corrective action
+               Control stock posting via Usage Decision
+          This project demonstrates how SAP QM integrates with:
+               SAP MM
+               SAP PP
 
 
 3.  Project Scope
@@ -47,20 +48,17 @@ How to Use This Repository
           This project covers:
             
           A. QM + MM Integration
-           
                 Inspection Type 01 (GR from Vendor)
                 Quality Info Record
                 Stock in Quality Inspection
                 Usage Decision
             
           B. QM + PP Integration
-            
                 Inspection Type 03 (In-Process Inspection)
                 Inspection Type 04 (GR from Production)
                 Link between Routing & Inspection Plan
             
           C. Defect & Notification Process
-            
                 Q2 Internal Notification
                 Defect Recording
                 Root Cause & Task Assignment
@@ -68,17 +66,12 @@ How to Use This Repository
 
 4. Process Flow
 
-              Purchase Order
-                    ↓
-              Goods Receipt (MIGO)
-                    ↓
-              Inspection Lot Creation
-                    ↓
-              Results Recording
-                    ↓
-              Usage Decision
-                    ↓
-              Stock Posting (Accepted / Rejected)
+          QM Integration with MM
+                    Purchase Order   →   Goods Receipt   →   Inspection Lot (01)   →   Result Recording   →   Usage Decision   →   Stock Posting
+          
+          QM Integration with PP
+                    Production Order   →   Release Production Order   →   Inspection Lot (03)   → Result Recording   →   Usage Decision
+                    GR from Production   →   Inspection Lot (04)   →   Result Recording   →   Usage Decision   →   Stock Posting
 
 
 5. SAP Transactions Used
@@ -106,8 +99,8 @@ How to Use This Repository
 8. Roles & Responsibilities
 
             - Requirement gathering from business users
-            - Designing QM integration with Procurement
-            - Configuring Inspection Type 01
+            - Designing QM integration with Procurement and Production
+            - Configuring Inspection Type 01, 03, 04
             - Preparing test data
             - Executing UAT scenarios
             - Supporting go-live and hypercare
@@ -124,8 +117,8 @@ How to Use This Repository
              │   
              ├── README.md
              ├── Documents/
-             │     ├── Master Data Configuration Details.pdf     
-             │     └── Step by Step Process Execution.pdf
+             │     ├── Configuration Details.pdf     
+             │     └── End-to-End QM Integration with MM & PP Step by Step Process Execution.pdf
              │
              ├── Flowchart/
              │     └── Process Flow.png
