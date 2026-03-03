@@ -109,7 +109,7 @@ End-to-End QM Integration with MM & PP in SAP
              │     └── Finished Goods Inspection ( PP + MM ) of 04 Insp.type step by step transaction execution.pdf
              │
              ├── Flowchart/
-             │     └── Process Flow.png
+             │     └── QM Integration with MM and PP flowchart.png
              │
              └── Test_Data/
                    └── Sample test data.xlsx
