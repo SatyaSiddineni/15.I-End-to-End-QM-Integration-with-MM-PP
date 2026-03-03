@@ -1,4 +1,4 @@
-End-to-End QM Integration with MM & PP in SAP (Functional Project)
+End-to-End QM Integration with MM & PP in SAP
 
 
 1. Project Overview 
@@ -78,18 +78,12 @@ End-to-End QM Integration with MM & PP in SAP (Functional Project)
 
              T-Code       Purpose
              ME21N 	       Create Purchase Order
-             MIGO 	       Post the GR 
+             MIGO 	       Post the GR
+             QA03          Display Inspection Lot
+             CO01          Create Production Order 
              QE51N 	       Results Recording 
              QA11 	       Usage Decision
-    
-
-6. Master Data Involved
-
-            Material Master
-            Vendor Master
-            Inspection Plan
-            Master Inspection Characteristics 
-          
+             QM01          Create Quality Notification 
 
 7. Configuration Overview (SPRO)
 
