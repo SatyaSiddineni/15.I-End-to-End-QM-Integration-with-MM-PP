@@ -83,7 +83,7 @@ End-to-End QM Integration with MM & PP in SAP
              CO01         Create Production Order 
              QE51N 	   Results Recording 
              QA11 	       Usage Decision
-             QM01       Create Quality Notification 
+             QM01         Create Quality Notification 
 
 7. Configuration Overview (SPRO)
 
