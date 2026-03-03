@@ -3,16 +3,14 @@ End-to-End QM Integration with MM & PP in SAP
 
 1. Project Overview 
 
-          This project demonstrates complete integration of SAP Quality Management (QM) with:
-                SAP MM (Procurement Process)
-                SAP PP (Production Process)
+          This project demonstrates complete **End-to-End Integration of SAP Quality Management (QM)** with:
+                **SAP MM (Materials Management)** – Procurement Process
+                **SAP PP (Production Process)** – Manufacturing Process
             
-          It covers the full lifecycle of:
-                Incoming Raw Material Inspection (MM Integration)
-                In-Process Inspection (PP Integration)
-                Finished Goods Inspection (PP + MM Integration)
-                Usage Decision
-                Stock Posting based on UD
+          It showcases how inspection lots are automatically generated during:
+                Goods Receipt from Vendor (Inspection Type 01)
+                Production Order Release (Inspection Type 03)
+                Goods Receipt from Production (Inspection Type 04)
             
 
  How to Use This Repository
@@ -26,7 +24,7 @@ End-to-End QM Integration with MM & PP in SAP
 2. Business Scenario
 
           The company:
-               Procures raw materials from vendors
+               Procures raw materials from approved vendors
                Produces semi-finished and finished goods
                Performs quality inspections at:
                     Goods Receipt (Incoming)
