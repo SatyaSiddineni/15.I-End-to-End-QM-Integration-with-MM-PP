@@ -77,7 +77,7 @@ End-to-End QM Integration with MM & PP in SAP
 5. SAP Transactions Used
 
              T-Code       Purpose
-             ME21N 	       Create Purchase Order
+             ME21N 	      Create Purchase Order
              MIGO 	       Post the GR
              QA03          Display Inspection Lot
              CO01          Create Production Order 
