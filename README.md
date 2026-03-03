@@ -12,7 +12,6 @@ End-to-End QM Integration with MM & PP in SAP
                 In-Process Inspection (PP Integration)
                 Finished Goods Inspection (PP + MM Integration)
                 Usage Decision
-                Defect Recording & Quality Notifications
                 Stock Posting based on UD
             
 
@@ -35,8 +34,6 @@ End-to-End QM Integration with MM & PP in SAP
                     After Production (Final Inspection)
           Quality issues must:
                Block stock automatically
-               Trigger Quality Notification
-               Allow corrective action
                Control stock posting via Usage Decision
           This project demonstrates how SAP QM integrates with:
                SAP MM
@@ -49,19 +46,12 @@ End-to-End QM Integration with MM & PP in SAP
             
           A. QM + MM Integration
                 Inspection Type 01 (GR from Vendor)
-                Quality Info Record
                 Stock in Quality Inspection
                 Usage Decision
             
           B. QM + PP Integration
                 Inspection Type 03 (In-Process Inspection)
                 Inspection Type 04 (GR from Production)
-                Link between Routing & Inspection Plan
-            
-          C. Defect & Notification Process
-                Q2 Internal Notification
-                Defect Recording
-                Root Cause & Task Assignment
 
 
 4. Process Flow
@@ -87,7 +77,7 @@ End-to-End QM Integration with MM & PP in SAP
 
 7. Configuration Overview (SPRO)
 
-            Please do refer Master Data Configuration Details.pdf.
+            Please do refer Master Data Configuration.pdf.
 
 
 8. Roles & Responsibilities
@@ -102,17 +92,21 @@ End-to-End QM Integration with MM & PP in SAP
 
 9. Step-by-Step Transaction Execution
 
-            Please do refer Step by Step Process Execution.pdf.
+            Please do refer the below three pdf's.
+                    QM Integration with MM of 01 Insp.type step by step transaction execution.pdf
+                    QM Integration with PP of 03 Insp.type step by step transaction execution.pdf
+                    Finished Goods Inspection ( PP + MM ) of 04 Insp.type step by step transaction execution.pdf   
 
+11.  Project Structure
 
-10.  Project Structure
-
-             End-to-End QM in Procurement/
+             End-to-End QM Integration with MM & PP in SAP/
              │   
              ├── README.md
              ├── Documents/
-             │     ├── Configuration Details.pdf     
-             │     └── End-to-End QM Integration with MM & PP Step by Step Process Execution.pdf
+             │     ├── Master Data Configuration.pdf
+             │     ├── QM Integration with MM of 01 Insp.type step by step transaction execution.pdf
+             │     ├── QM Integration with PP of 03 Insp.type step by step transaction execution.pdf        
+             │     └── Finished Goods Inspection ( PP + MM ) of 04 Insp.type step by step transaction execution.pdf
              │
              ├── Flowchart/
              │     └── Process Flow.png
