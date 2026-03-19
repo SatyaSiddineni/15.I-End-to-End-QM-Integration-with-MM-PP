@@ -95,7 +95,7 @@ End-to-End QM Integration with MM & PP in SAP
                     QM Integration with PP of 03 Insp.type step by step transaction execution.pdf
                     Finished Goods Inspection ( PP + MM ) of 04 Insp.type step by step transaction execution.pdf    
 
-11.  Project Structure
+10.  Project Structure
 
              End-to-End QM Integration with MM & PP in SAP/
              │   
